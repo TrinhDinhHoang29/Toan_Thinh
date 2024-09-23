@@ -80,4 +80,63 @@
   border-radius: 50%;
 }
 
+.footer {
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__copyright {
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-green);
+}
+.footer__copyright span {
+  color: var(--color-text-gray);
+  font-size: 14px;
+}
+.footer__wrapper {
+  flex: 1;
+  background-color: var(--color-text-gray);
+  padding: 46px 0;
+}
+.footer__wrapper__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__wrapper__content__introduce {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__wrapper__content__introduce__text {
+  font-weight: 700;
+  color: var(--color-green);
+}
+.footer__wrapper__content__detail {
+  padding: 10.5px 0;
+  width: 850px;
+}
+.footer__wrapper__content__detail__register {
+  width: 340px;
+}
+.footer__wrapper__content__detail__register__input {
+  border: 2px solid var(--color-green);
+}
+.footer__wrapper__content__detail__register__input input {
+  outline: none;
+  border: none;
+  width: 220px;
+}
+.footer__wrapper__content__detail__register__input button {
+  height: 100%;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  flex: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
