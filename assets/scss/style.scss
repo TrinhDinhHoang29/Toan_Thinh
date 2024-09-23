@@ -1,73 +1,70 @@
-    //start header
-    .header {
-        // background-color: var(--color-green);
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 1px 0;
-        &--my0 {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-        }
-        &--bgprimary {
-            background-color: var(--color-green) !important;
-        }
-        &__logo {
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-        &__menu {
-            .item--active {
-                background-color: var(--color-red);
-            }
-            &__item {
-                padding: 6px 10px;
-                border-radius: 18px;
-                margin: 0px 10px;
-                a {
-                    color: var(--color-white);
-                    opacity: 0.9;
-                }
-            }
+
+
+
+
+//start header
+.header{
+    // background-color: var(--color-green);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    &__logo{
+       
+        img{
+            width: 100%;
+            height: 100%;
         }
     }
-    
-    .list__icon {
-        &__item {
-            padding: 8px 10px;
+    &__menu{
+        .item--active{
+            background-color: var(--color-red);
+        }
+        &__item{
+            padding: 6px 10px;
+            border-radius: 18px;
             margin: 0px 10px;
-            position: relative;
-            &--radius {
-                background-color: var(--color-red);
-                border-radius: 50%;
-            }
-            .cart-quantity {
-                position: absolute;
-                top: 0%;
-                right: 0%;
-                padding: 2px 7px;
-                background-color: var(--color-red);
-                border-radius: 30px;
-            }
-            a {
+            a{
                 color: var(--color-white);
-                i {
-                    font-size: 20px;
-                }
+                opacity: 0.9;
             }
         }
     }
-    
-    //end header
-    // banner header start
-    .banner {
+}
+.list__icon{
+    &__item{
+        padding: 8px 10px;
+        margin: 0px 10px;
         position: relative;
-        .container {
+        &--radius{
+            background-color: var(--color-red);
+            border-radius: 50%;
+        }
+        .cart-quantity{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            padding: 2px 7px;
+            background-color: var(--color-red);
+            border-radius: 30px;
+        }
+        
+        a{
+            color: var(--color-white);
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
+//end header
+
+
+// banner header start
+.banner{
+    position: relative;
+    .container{
+        height: 100%;
+        .row{
             height: 100%;
             .row {
                 height: 100%;

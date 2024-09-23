@@ -1,0 +1,11 @@
+.cart {
+  margin-top: 70.3px;
+  background-color: var(--color-gray);
+}
+.cart__number {
+  width: 124px;
+  padding: 13px 15px;
+  border: 2px solid var(--color-gray);
+}
+
+/*# sourceMappingURL=login_cart.css.map */

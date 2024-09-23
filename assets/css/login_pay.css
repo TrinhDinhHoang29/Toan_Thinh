@@ -1,0 +1,25 @@
+.pay {
+  margin-top: 70.3px;
+  background-color: var(--color-gray);
+}
+.pay__textarea {
+  height: 126px;
+}
+
+.order {
+  font-size: 16px;
+}
+.order__title {
+  max-width: 202px;
+}
+
+input[type=radio] {
+  width: 24px;
+  height: 24px;
+}
+
+.fwsembold {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=login_pay.css.map */
