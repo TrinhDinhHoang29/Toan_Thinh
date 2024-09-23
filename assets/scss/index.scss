@@ -1,0 +1,41 @@
+
+
+
+// introduce start 
+.introduce{
+    padding: 70px 0;
+    &__des{
+        
+        p{
+            text-align: justify;
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 600;
+        }
+    }
+    &__content{
+
+        h1{
+            color: var(--color-green);
+            font-weight: 700;
+            font-size: 40px;
+        }
+        &--undercase{
+            display: inline-block;
+            width: 25px;
+            height: 10px;
+            border-bottom: 1px solid gray;
+            margin-right: 5px;
+        }
+    }
+    &__button{
+        margin-top: 35px;
+    }
+    
+}
+
+
+
+
+// introduce end
+
