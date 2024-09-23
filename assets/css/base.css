@@ -1,13 +1,48 @@
-:root{
-    --color-green:#067231;
-    --color-red:#E30613;
-    --color-white:#FFFFFF;
-    --color-gray:#E5E7EB;
+:root {
+    --color-green: #067231;
+    --color-sub-green: #087333;
+    --color-red: #E30613;
+    --color-white: #FFFFFF;
+    --color-gray: #E5E7EB;
+    --color-sub-gray: #6B7280;
+    --color-dash-gray: #9CA3AF;
     --color-text-gray: #D1D5DB;
+    --color-blue: #1C64F2;
+    --color-orange: #DA6817;
     --font: "Inter", sans-serif;
 }
-html,body{
+
+html,
+body {
     font-family: var(--font);
     font-size: 14px;
 }
 
+button {
+    border: none;
+    align-items: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: #087333;
+}
+
+.pr-8 {
+    padding-right: 8px;
+}
+
+.pl-8 {
+    padding-left: 8px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}

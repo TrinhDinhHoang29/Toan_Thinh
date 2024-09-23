@@ -1,0 +1,117 @@
+.content {
+    margin-top: 120px;
+}
+
+.content__blog__header {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.content__blog__sub-header {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content__blog__sub-header>*:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.content__blog__sub-header>*:last-child>* {
+    padding-left: 8px;
+}
+
+.content__blog__sub-header>*:last-child img {
+    width: 23px;
+    height: 23px;
+}
+
+.content__blog__content-item {
+    margin-bottom: 42px;
+}
+
+.content__blog__content-item>h4 {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.content__blog__content-item>p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+}
+
+.content__form__wrapper {
+    border: 1px solid var(--color-green);
+}
+
+.content__form__header {
+    background-color: var(--color-green);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.content__form__content {
+    padding: 16px 12px;
+}
+
+.content__form__content>div {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__form__content>div>label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content__form__content>div:not(.file)>input {
+    border: 0.6px solid var(--color-sub-gray);
+    opacity: 0.8;
+    border-radius: 2px;
+    padding: 12px 8px;
+    margin-top: 8px;
+}
+
+.content__form__content>button {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: var(--color-red);
+    padding: 16px 0;
+}
+
+.content__form__content>.file {
+    border: 1px dashed var(--color-dash-gray);
+    padding: 8px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__form__content>.file>div {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.content__form__content>.file>div>button {
+    margin-left: 8px;
+    color: white;
+    border-radius: 4px;
+    background: var(--color-blue);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 6px 20px;
+}
