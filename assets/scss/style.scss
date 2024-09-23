@@ -8,6 +8,17 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1px 0;
+    &--my0{
+        margin-top: 0!important;
+        margin-bottom: 0!important;
+    }
+    &--bgprimary{
+        background-color: var(--color-green)!important;
+    }
     &__logo{
        
         img{

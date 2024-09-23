@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/login_cart.css">
+    <title>Chi tiết sản phẩm</title>
+</head>
+<body>
+  <!-- -- header start -->
+  <header class="header my-3 header--my0 header--bgprimary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-2">
+        <div class="header__logo">
+          <img src="./assets/images/logo/logo_primary.svg" alt="">
+        </div>  
+      </div>
+      <div class="col-8">
+        <ul class="header__menu d-flex justify-content-center align-items-center">
+          <li class="header__menu__item item--active">
+            <a href="">TRANG CHỦ</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="">GIỚI THIỆU</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="">SẢN PHẨM</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="">TIN TỨC</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="">LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="list__icon d-flex justify-content-center align-items-center">
+          <li class="list__icon__item">
+            <a href="">
+              <span class="cart-quantity">0</span>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
+            </a>
+          </li>
+          <li class="list__icon__item">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </a>
+          </li>
+          <li class="list__icon__item list__icon__item--radius bg-transparent">
+            <a href="" class="">
+                <img src="./assets/images/avt/girl.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!-- -- header end -->
+  <div class="cart py-5">
+    <div class="container">
+      <h3 class="fw-bold mb-4">Giỏ hàng</h3>
+      <div class="px-3 pt-3 border bg-white">
+        <div
+          class="table-responsive"
+        >
+        <table class="table align-middle mb-0">
+          <thead>
+            <tr>
+              <th scope="col" class="fw-bold">Sản phẩm</th>
+              <th scope="col" class="fw-bold">Đơn giá</th>
+              <th scope="col" class="fw-bold">Số lượng</th>
+              <th scope="col" class="fw-bold">Giá tiền</th>
+              <th scope="col" class="fw-bold"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-bottom align-middle">
+              <td scope="row" class="d-flex align-items-center gap-4 py-4">
+                <img src="./assets/images/products_detail/1.png" alt="#">
+                <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+              </td>
+              <td class="fw-bold align-middle">
+                126.000đ
+              </td>
+              <td class="align-middle">
+                <input type="number" value="50" class="cart__number">
+              </td>
+              <td class="align-middle fw-bold">6.300.000đ</td>
+              <td class="align-middle"><button class="bg-transparent"><img src="./assets/images/icon/trash.svg" alt=""></button></td>
+            </tr>
+            <tr class="border-bottom align-middle">
+              <td scope="row" class="d-flex align-items-center gap-4 py-4">
+                <img src="./assets/images/products_detail/2.png" alt="#">
+                <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+              </td>
+              <td class="fw-bold align-middle">
+                126.000đ
+              </td>
+              <td class="align-middle">
+                <input type="number" value="50" class="cart__number">
+              </td>
+              <td class="align-middle fw-bold">6.300.000đ</td>
+              <td class="align-middle"><button class="bg-transparent"><img src="./assets/images/icon/trash.svg" alt=""></button></td>
+            </tr>
+            <tr class="border-bottom align-middle"></tr>
+              <td scope="row" class="d-flex align-items-center gap-4 py-4">
+                <img src="./assets/images/products_detail/3.png" alt="#">
+                <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+              </td>
+              <td class="fw-bold align-middle">
+                126.000đ
+              </td>
+              <td class="align-middle">
+                <input type="number" value="50" class="cart__number">
+              </td>
+              <td class="align-middle fw-bold">6.300.000đ</td>
+              <td class="align-middle"><button class="bg-transparent"><img src="./assets/images/icon/trash.svg" alt=""></button></td>
+            </tr>
+            <tr class="border-bottom align-middle"></tr>
+              <td scope="row" class="d-flex align-items-center gap-4 py-4">
+                <img src="./assets/images/products_detail/4.png" alt="#">
+                <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+              </td>
+              <td class="fw-bold align-middle">
+                126.000đ
+              </td>
+              <td class="align-middle">
+                <input type="number" value="50" class="cart__number">
+              </td>
+              <td class="align-middle fw-bold">6.300.000đ</td>
+              <td class="align-middle"><button class="bg-transparent"><img src="./assets/images/icon/trash.svg" alt=""></button></td>
+            </tr>
+            <tr class="border-bottom align-middle"></tr>
+              <td scope="row" class="py-5 fw-bold align-middle">
+                  Tổng tiền
+              </td>
+              <td class="fw-bold align-middle">
+              </td>
+              <td class="align-middle">
+              </td>
+              <td class="align-middle fw-bold fs-2 text-danger" colspan="2">
+                25.200.000đ
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center my-4">
+        <div></div>
+        <div class="">
+          <button class="btn btn-success text-white border-0 py-3 px-5 rounded-0 me-2">Về trang chủ</button>
+          <button class="btn btn-danger text-white border-0 py-3 px-5 rounded-0">Thanh toán</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+  <!-- introduce end -->
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="container footer__wrapper__content">
+        <div class="footer__wrapper__content__introduce h-100">
+          <a href="#" class="">
+            <img src="./assets/Frame 45994.svg" height="62px" width="196px" />
+          </a>
+          <div class="lh-base">
+            <span class="footer__wrapper__content__introduce__text"
+              >Địa chỉ: </span
+            >Khu công nghiệp Hạp Lĩnh, Phường Hạp Lĩnh, TP.Bắc Ninh, Việt Nam.
+          </div>
+          <div class="lh-base">
+            <div class="footer__wrapper__content__introduce__text">
+              Điện thoại:
+            </div>
+            <span> 0222 3898 222</span>
+          </div>
+          <div class="lh-base">
+            <div class="footer__wrapper__content__introduce__text">
+              Email:
+            </div>
+            <span>dichvukhachhang@toanthinh.vn</span>
+          </div>
+        </div>
+        <div
+          class="footer__wrapper__content__detail h-100 d-flex justify-content-between"
+        >
+          <div class="">
+            <div class="text-uppercase fw-bold mb-4">quick links</div>
+            <p class="mb-3"><a href="#" class="text-dark">Trang chủ</a></p>
+            <p class="mb-3"><a href="#" class="text-dark">Giới thiệu</a></p>
+            <p class="mb-3"><a href="#" class="text-dark">Sản phẩm</a></p>
+            <p class="mb-3"><a href="#" class="text-dark">Tin tức</a></p>
+            <p><a href="#" class="text-dark">Liên hệ</a></p>
+          </div>
+          <div class="">
+            <div class="text-uppercase fw-bold mb-4">CHÍNH SÁCH CHUNG</div>
+            <p class="mb-3">
+              <a href="#" class="text-dark">Chính sách thanh toán</a>
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-dark">Chính sách giao hàng</a>
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-dark">Chính sách bảo hành</a>
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-dark">Chính sách đổi trả</a>
+            </p>
+          </div>
+          <div class=" d-flex flex-column justify-content-between h-100 footer__wrapper__content__detail__register">
+            <div class="text-uppercase fw-bold">ĐĂNG KÝ NHẬN THÔNG TIN</div>
+            <div
+              class="w-100 r d-flex footer__wrapper__content__detail__register__input"
+            >
+              <input type="text" class="p-3" placeholder="Your email address"/>
+              <button class="text-uppercase border-0">SUBSCRIBE</button>
+            </div>
+            <p class="lh-base">
+              By providing your email address, you agree to our Privacy Policy and Terms of Service
+            </p>
+            <div class="">
+              <a href="#" class="me-2">
+                <img src="./assets/images/social-icon/facebook.svg" alt="facebook">
+              </a>
+              <a href="#" class="me-2">
+                <img src="./assets/images/social-icon/instagram.svg" alt="instagram">
+              </a>
+              <a href="#" class="me-2">
+                <img src="./assets/images/social-icon/linkin.svg" alt="linkin">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <span>Copyright © ToanThinh - All Rights Reserved</span>
+    </div>
+  </footer>
+  <!-- footer end -->
+    <!-- -- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- -- Bootstrap -->
+
+</body>
+
+</html>
