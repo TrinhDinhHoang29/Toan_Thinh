@@ -1,0 +1,12 @@
+:root{
+    --color-green:#067231;
+    --color-red:#E30613;
+    --color-white:#FFFFFF;
+    --color-gray:#E5E7EB;
+    --font: "Inter", sans-serif;
+}
+html,body{
+    font-family: var(--font);
+    font-size: 14px;
+}
+

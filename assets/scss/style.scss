@@ -1,0 +1,19 @@
+
+
+
+
+//start header
+.header{
+    background-color: var(--color-green);
+    &__menu{
+
+        &--item{
+            padding: 0px 15px;
+            a{
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+//end header

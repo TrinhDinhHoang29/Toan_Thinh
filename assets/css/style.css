@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--color-green);
+}
+.header__menu--item {
+  padding: 0px 15px;
+}
+.header__menu--item a {
+  color: var(--color-white);
+}
+
+/*# sourceMappingURL=style.css.map */
