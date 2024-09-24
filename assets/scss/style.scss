@@ -4,7 +4,11 @@
 
 //start header
 .header{
-    // background-color: var(--color-green);
+    transition: ease 0.5s all;
+    &--bgGreen{
+        background-color: var(--color-green);
+
+    }
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -161,16 +165,36 @@
             }
         }
     }
-    
-    // footer end
-    //button custom
-    .btn__custom {
-        padding: 12px 24px;
-        color: var(--color-white);
-        font-weight: 700;
-        &--green {
-            background-color: var(--color-green);
+}
+// footer end
+
+
+
+//button custom
+.btn__custom{
+    padding: 12px 24px;
+    color: var(--color-white);
+    font-weight: 700;
+    transition: ease 0.8s all;
+    &--green{ 
+        background-color: var(--color-green);
+
+        &--outline{
+            color:var(--color-green);
+            background-color: var(--color-white);
+            
+            border: 1px solid var(--color-green);
         }
+        &--outline:hover{
+            background-color: var(--color-green);
+            color: var(--color-white);
+        }
+
     }
-    
-    //end button custom
+    &--green:hover{
+        opacity: 0.8;
+    }
+
+}
+
+//end button custom

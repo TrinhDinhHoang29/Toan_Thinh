@@ -1,5 +1,9 @@
 .introduce {
   padding: 70px 0;
+  background-color: var(--color-gray);
+  background-image: url(../images/char/A.png);
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 .introduce__des p {
   text-align: justify;
@@ -21,6 +25,110 @@
 }
 .introduce__button {
   margin-top: 35px;
+}
+.introduce__quantity {
+  padding: 20px 50px;
+  margin-left: 50px;
+}
+.introduce__item--wrapper {
+  margin-bottom: 40px;
+}
+.introduce__item--wrapper h1 {
+  color: var(--color-green);
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.introduce__item--wrapper h1 sup {
+  position: absolute;
+  right: -15px;
+  font-size: 30px;
+  font-weight: 600 !important;
+}
+.introduce__item--dec {
+  font-weight: 600;
+}
+
+.feature {
+  margin: 55px;
+}
+.feature .display-button-swiper {
+  position: relative;
+}
+.feature .swiper-button-prev {
+  position: absolute;
+  left: -3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feature .swiper-button-next {
+  position: absolute;
+  right: -3%;
+  transform: translateY(-50%);
+}
+.feature .swiper-button-prev::after, .feature .swiper-button-next::after {
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: var(--color-gray);
+  color: black;
+  border-radius: 50%;
+}
+.feature__item:hover .feature__action .feature__action--icon {
+  color: white;
+  background-color: var(--color-green);
+  padding: 5px 5px;
+  border-radius: 50%;
+}
+.feature__link {
+  user-select: none;
+  width: 300px;
+}
+.feature__img img {
+  height: auto;
+  width: 100%;
+}
+.feature__title {
+  font-weight: 800;
+}
+.feature__product__title {
+  font-weight: 700;
+  color: black;
+}
+.feature__action--icon {
+  color: var(--color-green);
+  display: inline-block;
+  transition: ease 0.3s all;
+}
+.feature__head {
+  margin-bottom: 30px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.partner {
+  margin-bottom: 50px;
+}
+.partner__title {
+  display: flex;
+  align-items: center;
+}
+.partner__title h3 {
+  font-weight: 800;
+  margin-right: 20px;
+}
+.partner__undercorse {
+  flex: 1;
+  height: 10px;
+  border-bottom: 2px solid var(--color-gray);
+}
+.partner__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */

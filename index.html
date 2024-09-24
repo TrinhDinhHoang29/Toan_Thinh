@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="list__icon__item">
-            <a href="">
+            <a href="" >
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -134,7 +134,8 @@
   <!-- banner header end -->
   <!-- introduce start -->
   <div class="introduce">
-    <div class="container">
+    <div class="container introduce--character">
+
       <div class="row">
         <div class="col-6">
           <div class="introduce__content">
@@ -153,22 +154,165 @@
               <p class="mb-3">Trải qua nhiều năm kinh nghiệm hoạt động trong ngành cung ứng bảo hộ lao động và vật tư tiêu hao cho các công ty khu công nghiệp, những giá trị đến từ con người, dịch vụ và tầm nhìn của công ty chúng tôi sẽ thay cho lời cam kết để Công Ty TNHH Toàn Thịnh trở thành đối tác chiến lược và tin cậy đối với các quí khách hàng và đối tác.</p>
             </div>
             <div class="introduce__button">
-              <button class="btn__custom btn__custom--green">Xem thêm <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg></button>
+        <button class="btn__custom btn__custom--green">Xem thêm <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg></button>
             </div>
             
           </div>
         </div>
         <div class="col-6">
-          <div class="introduce__quantity">
+          <div class="introduce__quantity d-flex justify-content-between">
+            <div class="introduce__item"> 
+              <div class="introduce__item--wrapper">
+                  <h1>8.000
+                    <sup>+</sup>
+                  </h1>
+                  <div class="introduce__item--dec">
+                    M2 KHO HÀNG
+                  </div>
+              </div>
+              <div class="introduce__item--wrapper">
+                <h1>2K</h1>
+                <div class="introduce__item--dec ">
+                  SẢN PHẨM
+                </div>
+            </div>
+            </div>
+            <div class="introduce__item">
+              <div class="introduce__item--wrapper">
+                <h1>200
+                  <sup>+</sup>
+                </h1>
+                <div class="introduce__item--dec ">
+                  CÁN BỘ NHÂN VIÊN
+                </div>
+              </div>
+              <div class="introduce__item--wrapper">
+                <h1>10K</h1>
+                <div class="introduce__item--dec ">
+                  KHÁCH HÀNG
+                </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
   <!-- introduce end -->
+
+  <!-- Product feature start  -->
+  <div class="feature">
+    <div class="container display-button-swiper">
+    <div class="container swiper">
+      <div class="feature__head d-flex justify-content-between">
+        <h3 class="feature__title">
+          SẢN PHẨM NỔI BẬT
+        </h3>
+    <button class="btn__custom btn__custom--green--outline">Xem tất cã <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg></button>
+      </div>
+        <div class="feature__wrapper ">
+          <ul class="feature__list swiper-wrapper">
+            <li class="feature__item swiper-slide ">
+              <a href="#" class="feature__link">
+                <div class="feature__img mb-3">
+                  <img src="./assets/images/products/Rectangle 935.png" alt="">
+                </div>
+                <div class="feature__product__title my-2">
+                  Găng Tay Cao Su Nitrile
+                </div>
+                <div class="feature__action">
+                  <a href="#" class="feature__action--icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="feature__item swiper-slide">
+              <a href="#" class="feature__link">
+                <div class="feature__img mb-3">
+                  <img src="./assets/images/products/Rectangle 936.png" alt="">
+                </div>
+                <div class="feature__product__title my-2">
+                  Găng Tay Cao Su Nitrile
+                </div>
+                <div class="feature__action">
+                  <a href="#" class="feature__action--icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="feature__item swiper-slide">
+              <a href="#" class="feature__link">
+                <div class="feature__img mb-3">
+                  <img src="./assets/images/products/Rectangle 937.png" alt="">
+                </div>
+                <div class="feature__product__title my-2">
+                  Găng Tay Cao Su Nitrile
+                </div>
+                <div class="feature__action">
+                  <a href="#" class="feature__action--icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="feature__item swiper-slide">
+              <a href="#" class="feature__link">
+                <div class="feature__img mb-3">
+                  <img src="./assets/images/products/Rectangle 938.png" alt="">
+                </div>
+                <div class="feature__product__title my-2">
+                  Găng Tay Cao Su Nitrile
+                </div>
+                <div class="feature__action">
+                  <a href="#" class="feature__action--icon">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class="feature__item swiper-slide">
+              <a href="#" class="feature__link">
+                <div class="feature__img mb-3">
+                  <img src="./assets/images/products/Rectangle 935.png" alt="">
+                </div>
+                <div class="feature__product__title my-2">
+                  Găng Tay Cao Su Nitrile
+                </div>
+                <div class="feature__action">
+                  <a href="#" class="feature__action--icon" >
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="28"  height="28"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M15 16l4 -4" /><path d="M15 8l4 4" /></svg>
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>  
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>   
+  </div>
+  </div>
+  <!-- Product feature end -->
+   <!-- Partner start -->
+  <div class="partner">
+    <div class="container">
+      <div class="partner__title">
+        <h3>ĐỐI TÁC</h3>
+        <div class="partner__undercorse"></div>
+      </div>
+      <ul class="partner__list">
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 9.png" alt="" ></a></li>
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 10.png" alt="" ></a></li>
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 11.png" alt="" ></a></li>
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 12.png" alt="" ></a></li>
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 13.png" alt="" ></a></li>
+        <li class="partner__item"><a href=""><img src="./assets/images/partnership-icon/image 14.png" alt="" ></a></li>
+      </ul>
+    </div>
+  </div>
+   <!-- Partner end -->
   <!-- footer start -->
   <footer class="footer">
     <div class="footer__wrapper">
@@ -255,6 +399,11 @@
     <!-- -- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- -- Bootstrap -->
+    <!-- swiper start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <!-- swiper end  -->
+     <script src="./assets/js/home.js"></script>
 
 </body>
 
