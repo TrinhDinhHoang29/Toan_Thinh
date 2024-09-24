@@ -38,7 +38,7 @@
     }
     &__quantity{
         padding: 20px 50px;
-        margin-left: 50px;
+        margin-left: 0px 50px;
     }
     &__item{
         &--wrapper{
@@ -173,7 +173,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        flex-wrap: wrap;
+        img{
+            width: 150px;
+            height: auto;
+        }
     }
 }
 

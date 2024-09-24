@@ -171,4 +171,30 @@
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 992px) {
+  .banner__content {
+    margin-top: 20%;
+  }
+  .banner__content h3 {
+    font-size: 18px;
+  }
+  .banner__content h1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner__content {
+    margin-top: 25%;
+  }
+  .banner__content h3 {
+    font-size: 10px;
+  }
+  .banner__content h1 {
+    font-size: 12px;
+  }
+  .banner__content .banner__catalog li {
+    font-size: 8px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

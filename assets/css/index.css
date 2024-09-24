@@ -28,7 +28,7 @@
 }
 .introduce__quantity {
   padding: 20px 50px;
-  margin-left: 50px;
+  margin-left: 0px 50px;
 }
 .introduce__item--wrapper {
   margin-bottom: 40px;
@@ -129,6 +129,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+.partner__list img {
+  width: 150px;
+  height: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
