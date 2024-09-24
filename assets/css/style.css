@@ -34,7 +34,35 @@
 .header__propper.active {
   display: block;
 }
+.header__dropdown {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  top: -350%;
+  background-color: var(--color-white);
+  padding-top: 20px;
+  transition: ease 0.5s all;
+}
+.header__dropdown--display {
+  top: 70px;
+  opacity: 1;
+}
+.header__dropdown li {
+  padding-bottom: 20px;
+}
+.header__dropdown a {
+  font-size: 20px;
+  color: var(--color-text-gray);
+}
+.header__dropdown a:hover {
+  color: black;
+}
 
+.list__icon--dropdown {
+  cursor: pointer;
+}
 .list__icon__item {
   padding: 8px 10px;
   margin: 0px 10px;

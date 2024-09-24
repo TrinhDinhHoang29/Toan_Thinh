@@ -43,8 +43,36 @@
             display: block;
         }
     }
+    &__dropdown{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        opacity: 0;
+        top: -350%;
+        background-color: var(--color-white);
+        padding-top: 20px;
+        transition: ease 0.5s all;
+        &--display{
+            top: 70px;
+            opacity: 1;
+        }
+        li{
+            padding-bottom: 20px;
+        }
+        a{
+            font-size: 20px;
+            color: var(--color-text-gray);
+        }
+        a:hover{
+            color: black;
+        }
+    }
 }
 .list__icon{
+    &--dropdown{
+        cursor: pointer;
+    }
     &__item{
         padding: 8px 10px;
         margin: 0px 10px;
