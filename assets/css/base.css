@@ -24,7 +24,7 @@ button {
 }
 
 .text-red {
-    color: red;
+    color: var(--color-red);
 }
 
 .text-green {
@@ -45,4 +45,25 @@ button {
 
 .ml-8 {
     margin-left: 8px;
+}
+.fs-12{
+    font-size: 12px;
+}
+.text-gray{
+    color:var(--color-sub-gray)
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.p-1-2rem{
+    padding: 1.2rem;
+}
+.px-1-2rem{
+    padding: 0 1.2rem;
+}
+.py-1-2rem{
+    padding: 1.2rem 0;
+}
+.pb-1-2rem{
+    padding-bottom: 1.2rem;
 }

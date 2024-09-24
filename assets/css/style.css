@@ -27,6 +27,13 @@
   color: var(--color-white);
   opacity: 0.9;
 }
+.header__propper {
+  width: 340px;
+  display: none;
+}
+.header__propper.active {
+  display: block;
+}
 .header__dropdown {
   position: absolute;
   width: 100%;
@@ -60,6 +67,9 @@
   padding: 8px 10px;
   margin: 0px 10px;
   position: relative;
+}
+.list__icon__item img {
+  cursor: pointer;
 }
 .list__icon__item--radius {
   background-color: var(--color-red);

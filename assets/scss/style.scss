@@ -36,6 +36,13 @@
             }
         }
     }
+    &__propper{
+        width: 340px;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
     &__dropdown{
         position: absolute;
         width: 100%;
@@ -70,6 +77,9 @@
         padding: 8px 10px;
         margin: 0px 10px;
         position: relative;
+        img{
+            cursor: pointer;
+        }
         &--radius{
             background-color: var(--color-red);
             border-radius: 50%;
@@ -180,7 +190,6 @@
 
 
 // footer end
-
 
 
 //button custom
