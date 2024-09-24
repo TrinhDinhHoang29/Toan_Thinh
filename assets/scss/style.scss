@@ -36,12 +36,22 @@
             }
         }
     }
+    &__propper{
+        width: 340px;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
 }
 .list__icon{
     &__item{
         padding: 8px 10px;
         margin: 0px 10px;
         position: relative;
+        img{
+            cursor: pointer;
+        }
         &--radius{
             background-color: var(--color-red);
             border-radius: 50%;
@@ -152,7 +162,6 @@
 
 
 // footer end
-
 
 
 //button custom
