@@ -1,5 +1,8 @@
 .header {
   transition: ease 0.5s all;
+  height: 70px;
+  display: flex;
+  align-items: center;
   width: 100%;
   position: fixed;
   z-index: 100;

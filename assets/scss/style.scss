@@ -5,6 +5,9 @@
 //start header
 .header{
     transition: ease 0.5s all;
+    height: 70px;
+    display: flex;
+    align-items: center;
     &--bgGreen{
         background-color: var(--color-green);
 
