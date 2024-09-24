@@ -1,1 +1,2 @@
 translate scss to css: sass ./assets/scss/style.scss ./assets/css/style.css --watch 
+link design: https://www.figma.com/design/Dir2rtnNqOJ2cFxdWkeqsp/TOAN-THINH?node-id=14065-2754&node-type=frame&t=XdNKpNy2URl972zb-0
