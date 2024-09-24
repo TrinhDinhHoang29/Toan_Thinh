@@ -74,6 +74,7 @@
                 height: 100%;
             }
         }
+    }
         &__wrapper {
             position: absolute;
             z-index: 5;
@@ -92,7 +93,7 @@
             display: flex;
             flex-direction: column;
         }
-    }
+    
     
     #carouselExampleIndicators.carousel.slide {
         .carousel-indicators {
@@ -104,7 +105,7 @@
             border-radius: 50%;
         }
     }
-    
+}
     // banner header end
     // footer start
     .footer {
@@ -165,7 +166,8 @@
             }
         }
     }
-}
+
+
 // footer end
 
 
