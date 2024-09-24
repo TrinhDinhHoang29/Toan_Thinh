@@ -8,13 +8,13 @@
     height: 70px;
     display: flex;
     align-items: center;
-    &--bgGreen{
-        background-color: var(--color-green);
-
-    }
     width: 100%;
     position: fixed;
     z-index: 100;
+    top:0;
+    &--bgGreen{
+        background-color: var(--color-green);
+    }
     &__logo{
        
         img{
@@ -113,7 +113,6 @@
 
 // footer start
 .footer {
-    height: 370px;
     display: flex;
     flex-direction: column;
     &__copyright {
@@ -132,40 +131,20 @@
         background-color: var(--color-text-gray);
         padding: 46px 0;
         &__content {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            &__introduce {
-                width: 360px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                &__text {
-                    font-weight: 700;
-                    color: var(--color-green);
+            &__detail{
+                padding-top: 10.5px;
+                &__register{
+                    input{
+                    }
+                    border: 2px solid var(--color-green);
                 }
             }
-            &__detail {
-                padding: 10.5px 0;
-                width: 850px;
-                &__register {
-                    width: 340px;
-                    &__input {
-                        border: 2px solid var(--color-green);
-                        input {
-                            outline: none;
-                            border: none;
-                            width: 220px;
-                        }
-                        button {
-                            height: 100%;
-                            background-color: var(--color-green);
-                            color: var(--color-white);
-                            flex: 1;
-                        }
-                    }
-                }
+            &__introduce{
+                width: 360px;
+            }
+            &__text {
+                font-weight: 700;
+                color: var(--color-green);
             }
         }
     }
@@ -237,6 +216,12 @@
             }
         }
     }
+    .header{
+        .list__icon__item{
+            margin: 0;
+        }
+    }
+    
 }
 
 // @media only screen and (max-width: 0px) {
