@@ -4,6 +4,11 @@
 // introduce start 
 .introduce{
     padding: 70px 0;
+    background-color: var(--color-gray);
+        background-image: url(../images/char/A.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+    
     &__des{
         
         p{
@@ -31,6 +36,34 @@
     &__button{
         margin-top: 35px;
     }
+    &__quantity{
+        padding: 20px 50px;
+        margin-left: 50px;
+    }
+    &__item{
+        &--wrapper{
+            margin-bottom: 40px;
+            h1{
+                color: var(--color-green);
+                font-weight: 800;
+                font-size: 40px;
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                sup{
+                    position: absolute;
+                    right: -15px;
+                    font-size: 30px;
+                    font-weight: 600 !important;
+                }
+            }
+            
+        }
+        &--dec{
+            font-weight: 600;
+        }
+    }
+    
     
 }
 
@@ -39,3 +72,109 @@
 
 // introduce end
 
+//feature start 
+
+.feature{
+    .display-button-swiper{
+        position: relative;
+    }
+    .swiper-button-prev{
+        position: absolute;
+        left: -3%;
+        top: 50%;
+        transform:translateY(-50%);
+    }
+    .swiper-button-next{
+        position: absolute;
+        right: -3%;
+        transform:translateY(-50%);
+    }
+    margin: 55px;
+    .swiper-button-prev::after,.swiper-button-next::after{
+        font-size: 20px;
+        padding: 15px 20px;
+        background-color: var(--color-gray);
+        color: black;
+        border-radius: 50%;
+    }
+    &wrapper{
+        // position: relative; /* Đảm bảo các nút nằm trong relative container */
+        // overflow: visible; /* Cho phép nút tràn ra ngoài container nếu cần */
+    }
+    &__list{
+        // display: flex;
+        // justify-content:space-between;
+    }
+    &__item:hover .feature__action .feature__action--icon{
+        color: white;
+        background-color: var(--color-green);
+        padding: 5px 5px;
+        border-radius: 50%;
+        // width: calc(100% / 4 - 60px);
+        
+    }
+    &__link{
+        user-select: none;
+        width: 300px;
+    }
+    &__img{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+    &__title{
+        font-weight: 800;
+    }
+    &__product__title{
+        font-weight: 700;
+        color: black;
+    }
+    &__action{
+        &--icon{
+            color: var(--color-green);
+            display: inline-block;
+            transition: ease 0.3s all;
+            
+        }
+    }
+    &__head{
+        margin-bottom: 30px;
+    }
+    
+}
+.swiper{
+    width: 100%;
+}
+
+//feature end
+
+
+
+//partner start
+
+.partner{
+    margin-bottom: 50px;
+    &__title{
+        display: flex;
+        align-items: center;
+        h3{
+            font-weight: 800;
+            margin-right: 20px;
+        }
+    }
+
+    &__undercorse{
+        flex: 1;
+        height: 10px;
+        border-bottom: 2px solid var(--color-gray);
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+//partner end 

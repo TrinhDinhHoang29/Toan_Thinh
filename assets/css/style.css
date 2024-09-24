@@ -1,7 +1,11 @@
 .header {
+  transition: ease 0.5s all;
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+.header--bgGreen {
+  background-color: var(--color-green);
 }
 .header__logo img {
   width: 100%;
@@ -144,9 +148,22 @@
   padding: 12px 24px;
   color: var(--color-white);
   font-weight: 700;
+  transition: ease 0.8s all;
 }
 .btn__custom--green {
   background-color: var(--color-green);
+}
+.btn__custom--green--outline {
+  color: var(--color-green);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-green);
+}
+.btn__custom--green--outline:hover {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+.btn__custom--green:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
