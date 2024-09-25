@@ -9,14 +9,15 @@ window.addEventListener('scroll', function() {
     if (currentScrollPosition===0){
         elementHeader.classList.add("my-3");
         elementHeader.classList.remove("header--bgGreen");
-        img.src = "./assets/Frame 45994.svg"
+        img.src = "./assets/Frame 45994.svg";
 
         
 
-    }else if (currentScrollPosition > lastScrollPosition) {
+    } else
+        if (currentScrollPosition > lastScrollPosition) {
         elementHeader.classList.add("header--bgGreen");
         elementHeader.classList.remove("my-3");
-        img.src = "./assets/Logo_White.svg"
+        img.src = "./assets/Logo_White.svg";
     }  
 
     // Cập nhật vị trí cuộn trước đó

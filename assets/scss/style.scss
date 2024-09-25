@@ -48,14 +48,15 @@
         width: 100%;
         text-align: center;
         z-index: 10;
-        opacity: 0;
-        top: -350%;
+        top:70px;
         background-color: var(--color-white);
         padding-top: 20px;
-        transition: ease 0.5s all;
+        transition: 0.15s all;
+        transform: scaleY(0);
+        transform-origin: 50% top;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
         &--display{
-            top: 70px;
-            opacity: 1;
+             transform: scaleY(1);
         }
         li{
             padding-bottom: 20px;

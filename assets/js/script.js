@@ -6,9 +6,10 @@ if (dropDownMenu) {
     dropDownMenu.addEventListener("click", () => {
         const elementMenuDropdown = document.querySelector(".header__dropdown");
         elementMenuDropdown.classList.toggle("header__dropdown--display");
-
     })
 }
-avt.addEventListener('click', (e) => {
-    propper.classList.toggle('active');
-})
+if (avt) {
+    avt.addEventListener('click', (e) => {
+        propper.classList.toggle('active');
+    })
+}
