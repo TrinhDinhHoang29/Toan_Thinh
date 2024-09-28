@@ -7,8 +7,10 @@
     --color-sub-gray: #6B7280;
     --color-dash-gray: #9CA3AF;
     --color-text-gray: #D1D5DB;
+    --color-text-black: #1F2A37;
     --color-blue: #1C64F2;
     --color-orange: #DA6817;
+    --color-bg:#f3f4f6;
     --font: "Inter", sans-serif;
 }
 
@@ -16,11 +18,48 @@ html,
 body {
     font-family: var(--font);
     font-size: 14px;
+    line-height: 24px;
 }
 
 button {
     border: none;
     align-items: center;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.ml-8{
+    margin-left: 8px;
+}
+
+.py-12  {
+    padding: 12px 0;;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.bg-layout{
+    background: var(--color-bg);
+}
+
+.font-weight-700{
+    font-weight: 700;
+}
+
+.font-size-14{
+    font-size: 14px;
+}
+
+.text-light{
+    color: #fff;
 }
 
 .text-red {
@@ -29,6 +68,10 @@ button {
 
 .text-green {
     color: #087333;
+}
+
+.bg-green{
+    background: #067231;
 }
 
 .pr-8 {
