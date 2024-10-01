@@ -83,6 +83,7 @@
   padding: 2px 7px;
   background-color: var(--color-red);
   border-radius: 30px;
+  line-height: 16px;
 }
 .list__icon__item a {
   color: var(--color-white);
