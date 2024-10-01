@@ -104,7 +104,6 @@
 }
 //end header
 
-
 // banner header start
 .banner{
     position: relative;
@@ -134,6 +133,13 @@
             justify-content: space-between;
             display: flex;
             flex-direction: column;
+            .banner__catalog{
+
+                li{
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
     
     
@@ -149,6 +155,7 @@
     }
 }
 // banner header end
+
 
 // footer start
 .footer {
@@ -214,6 +221,11 @@
         }
 
     }
+    &--secondary{
+        background-color: #D1D5DB;
+        color: black;
+        
+    }
     &--green:hover{
         opacity: 0.8;
     }
@@ -241,16 +253,20 @@
 
 @media only screen and (max-width: 768px) {
     .banner__content{
-        margin-top: 25%;
+        margin-top: 22%;
         h3{
-            font-size: 10px;
+            font-size: 13px;
         }
         h1{
-            font-size: 12px;
+            font-size: 20px;
+            margin: 0 !important;
+            margin-bottom: 5px;
         }
         .banner__catalog{
             li{
-                font-size: 8px;
+                font-size: 10px;
+                margin: 0 !important;
+                line-height: 14px;
             }
         }
     }

@@ -121,6 +121,10 @@
   font-size: 50px;
   font-weight: 700;
 }
+.banner__content .banner__catalog li {
+  display: flex;
+  align-items: center;
+}
 .banner #carouselExampleIndicators.carousel.slide .carousel-indicators {
   z-index: 8;
 }
@@ -182,6 +186,10 @@
   background-color: var(--color-green);
   color: var(--color-white);
 }
+.btn__custom--secondary {
+  background-color: #D1D5DB;
+  color: black;
+}
 .btn__custom--green:hover {
   opacity: 0.8;
 }
@@ -199,16 +207,20 @@
 }
 @media only screen and (max-width: 768px) {
   .banner__content {
-    margin-top: 25%;
+    margin-top: 22%;
   }
   .banner__content h3 {
-    font-size: 10px;
+    font-size: 13px;
   }
   .banner__content h1 {
-    font-size: 12px;
+    font-size: 20px;
+    margin: 0 !important;
+    margin-bottom: 5px;
   }
   .banner__content .banner__catalog li {
-    font-size: 8px;
+    font-size: 10px;
+    margin: 0 !important;
+    line-height: 14px;
   }
   .header .list__icon__item {
     margin: 0;

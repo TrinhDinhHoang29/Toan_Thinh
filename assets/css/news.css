@@ -1,0 +1,47 @@
+.news__title {
+  font-weight: 800;
+}
+.news__listButton li {
+  margin-left: 10px;
+}
+.news .item__img img {
+  width: 100%;
+  aspect-ratio: 7/4;
+  object-fit: contains;
+}
+.news .item__date {
+  display: flex;
+  align-items: center;
+  color: var(--color-green);
+  font-weight: 700;
+}
+.news .item__date svg {
+  width: 17px;
+  height: 17px;
+}
+.news .item__title {
+  margin: 10px 0px;
+  text-align: justify;
+  font-weight: 700;
+  font-size: 20px;
+}
+.news .item__title a {
+  color: black;
+}
+.news .item__des {
+  line-height: 18px;
+  text-align: justify;
+}
+.news .pagination .page-item a {
+  border-radius: 50%;
+  padding: 5px 15px;
+  color: black;
+  background-color: #D1D5DB;
+  font-weight: 700;
+}
+.news .pagination .page-item-active a {
+  background-color: var(--color-green);
+  color: white;
+}
+
+/*# sourceMappingURL=news.css.map */
