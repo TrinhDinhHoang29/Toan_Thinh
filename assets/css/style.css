@@ -30,6 +30,7 @@
 .header__propper {
   width: 340px;
   display: none;
+  max-height: 608px;
 }
 .header__propper.active {
   display: block;
@@ -205,6 +206,9 @@
   .banner__content h1 {
     font-size: 30px;
   }
+  .header__propper {
+    max-height: 395px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .banner__content {
@@ -225,6 +229,9 @@
   }
   .header .list__icon__item {
     margin: 0;
+  }
+  .header__propper {
+    max-height: 276px;
   }
 }
 

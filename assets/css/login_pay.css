@@ -1,6 +1,6 @@
 .pay {
   margin-top: 70.3px;
-  background-color: var(--color-gray);
+  background-color: var(--color-bg-gray);
 }
 .pay__textarea {
   height: 126px;
@@ -20,6 +20,19 @@ input[type=radio] {
 
 .fwsembold {
   font-weight: 500;
+}
+
+.address__fill {
+  display: none;
+}
+.address__fill.active {
+  display: block;
+}
+.address__default {
+  display: none;
+}
+.address__default.active {
+  display: block;
 }
 
 /*# sourceMappingURL=login_pay.css.map */
