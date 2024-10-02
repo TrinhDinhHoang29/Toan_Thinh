@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login_info.css" />
+    <title>Thông tin cá nhân</title>
+  </head>
+  <body>
+    <!-- -- header start -->
+    <header class="header header--bgGreen">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-2 col-md-4 col-sm-4 col-4">
+            <div class="header__logo">
+              <img src="./assets/Logo_White.svg" alt="" />
+            </div>
+          </div>
+          <div class="col d-lg-block d-none">
+            <ul
+              class="header__menu d-flex justify-content-center align-items-center"
+            >
+              <li class="header__menu__item">
+                <a href="">TRANG CHỦ</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="">GIỚI THIỆU</a>
+              </li>
+              <li class="header__menu__item item--active">
+                <a href="">SẢN PHẨM</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="">TIN TỨC</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="">LIÊN HỆ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-4">
+            <ul
+              class="list__icon d-flex justify-content-center align-items-center"
+            >
+              <li class="list__icon__item d-lg-block d-none">
+                <a href="">
+                  <span class="cart-quantity">0</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                  </svg>
+                </a>
+              </li>
+              <li class="list__icon__item d-lg-block d-none">
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" />
+                  </svg>
+                </a>
+              </li>
+              <li class="list__icon__item d-lg-none d-md-block">
+                <a class="list__icon--dropdown">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="list__icon__item rounded-pill position-relative"
+                id="avt"
+              >
+                <img src="./assets/images/avt/girl.png" alt="avt" />
+                <div
+                  class="position-absolute end-0 top-100 header__propper rounded-3 bg-white shadow-sm overflow-auto"
+                >
+                  <div class="px-1-2rem">
+                    <div
+                      class="d-flex align-items-center justify-content-between cursor-pointer py-1-2rem border-bottom border-2"
+                    >
+                      <div
+                        class="d-flex gap-2 justify-content-center align-items-center lh-base overflow-hidden"
+                      >
+                        <img
+                          width="64px"
+                          height="64px"
+                          class="rounded-circle border-2 border border-secondary p-1"
+                          src="./assets/images/avt/girl.png"
+                          alt="avt"
+                        />
+                        <div class="">
+                          <p class="fw-bold">Nguyễn Trâm Anh</p>
+                          <span class="fs-12 text-gray"
+                            >Tramanhnguyen@gmail.com</span
+                          >
+                        </div>
+                      </div>
+                      <span class="d-xl-block d-none"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#6B7280"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M9 6l6 6l-6 6" /></svg
+                      ></span>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase-2"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M14 2a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3zm0 2h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1"
+                          /></svg
+                      ></span>
+                      <p class="fw-bold">Quản lý đơn hàng</p>
+                    </div>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6B7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" /></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-clock"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 2.66a1 1 0 0 0 -.993 .883l-.007 .117v5l.009 .131a1 1 0 0 0 .197 .477l.087 .1l3 3l.094 .082a1 1 0 0 0 1.226 0l.094 -.083l.083 -.094a1 1 0 0 0 0 -1.226l-.083 -.094l-2.707 -2.708v-4.585l-.007 -.117a1 1 0 0 0 -.993 -.883z"
+                          />
+                        </svg>
+                      </span>
+                      <p class="fw-bold">Lịch sử mua hàng</p>
+                    </div>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6B7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" /></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-bell"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
+                          />
+                          <path
+                            d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
+                          />
+                        </svg>
+                      </span>
+                      <p class="fw-bold">Thông báo</p>
+                    </div>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6B7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" /></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                          />
+                        </svg>
+                      </span>
+                      <p class="fw-bold">Địa chỉ giao hàng</p>
+                    </div>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6B7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" /></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-message"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2"
+                          />
+                        </svg>
+                      </span>
+                      <p class="fw-bold">Tư vấn</p>
+                    </div>
+                    <span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6B7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 6l6 6l-6 6" /></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="#6B7280"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-settings"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M14.647 4.081a.724 .724 0 0 0 1.08 .448c2.439 -1.485 5.23 1.305 3.745 3.744a.724 .724 0 0 0 .447 1.08c2.775 .673 2.775 4.62 0 5.294a.724 .724 0 0 0 -.448 1.08c1.485 2.439 -1.305 5.23 -3.744 3.745a.724 .724 0 0 0 -1.08 .447c-.673 2.775 -4.62 2.775 -5.294 0a.724 .724 0 0 0 -1.08 -.448c-2.439 1.485 -5.23 -1.305 -3.745 -3.744a.724 .724 0 0 0 -.447 -1.08c-2.775 -.673 -2.775 -4.62 0 -5.294a.724 .724 0 0 0 .448 -1.08c-1.485 -2.439 1.305 -5.23 3.744 -3.745a.722 .722 0 0 0 1.08 -.447c.673 -2.775 4.62 -2.775 5.294 0zm-2.647 4.919a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                          />
+                        </svg>
+                      </span>
+                      <p class="fw-bold">Cài đặt</p>
+                    </div>
+                  </div>
+                  <div class="px-1-2rem">
+                    <div
+                      class="d-flex align-items-center justify-content-between py-1-2rem cursor-pointer border-2 border-bottom"
+                    >
+                      <div class="d-flex gap-3 lh-base align-items-center">
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="#6B7280"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-shield-check"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                              d="M11.998 2l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021l.115 -.007zm3.71 7.293a1 1 0 0 0 -1.415 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+                            />
+                          </svg>
+                        </span>
+                        <p class="fw-bold">Chính sách & điều khoản sử dụng</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer"
+                  >
+                    <div class="d-flex gap-3 lh-base align-items-center">
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#E30613"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2"
+                          />
+                          <path d="M15 12h-12l3 -3" />
+                          <path d="M6 15l-3 -3" />
+                        </svg>
+                      </span>
+                      <p class="fw-bold text-red">Đăng xuất</p>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center justify-content-between pb-1-2rem px-1-2rem cursor-pointer gap-3"
+                  >
+                    <button
+                      class="w-100 py-2 rounded-pill d-flex align-items-center gap-1 justify-content-center"
+                    >
+                      <img
+                        src="./assets/images/avt/icon_profile/mobile.svg"
+                        alt="mobile"
+                      />
+                      <span>Tải App</span>
+                    </button>
+                    <button
+                      class="w-100 py-2 rounded-pill d-flex align-items-center justify-content-center gap-1"
+                    >
+                      <img
+                        src="./assets/images/avt/icon_profile/facebook.svg"
+                        alt="mobile"
+                      />
+                      <span>Fanpage</span>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ul class="header__dropdown">
+        <li>
+          <a href="">Trang chủ</a>
+        </li>
+        <li>
+          <a href="">Giới thiệu</a>
+        </li>
+        <li>
+          <a href="">Sản phẩm</a>
+        </li>
+        <li>
+          <a href="">Tin tức</a>
+        </li>
+        <li>
+          <a href="">Liên hệ</a>
+        </li>
+      </ul>
+    </header>
+    <!-- -- header end -->
+    <div class="info py-5">
+      <div class="container-lg container-fluid">
+        <div class="row">
+          <aside class="col-3 d-lg-block d-none">
+            <div class="rounded-3 bg-white shadow-sm w-100">
+              <div class="px-1-2rem">
+                <div
+                  class="d-flex align-items-center justify-content-between cursor-pointer py-1-2rem border-bottom border-2"
+                >
+                  <div
+                    class="d-flex gap-2 justify-content-center align-items-center lh-base overflow-hidden"
+                  >
+                    <img
+                      width="64px"
+                      height="64px"
+                      class="rounded-circle border-2 border border-secondary p-1"
+                      src="./assets/images/avt/girl.png"
+                      alt="avt"
+                    />
+                    <div class="">
+                      <p class="fw-bold">Nguyễn Trâm Anh</p>
+                      <span class="fs-12 text-gray"
+                        >Tramanhnguyen@gmail.com</span
+                      >
+                    </div>
+                  </div>
+                  <span class="d-xl-block d-none"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#6B7280"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M9 6l6 6l-6 6" /></svg
+                  ></span>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase-2"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M14 2a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3zm0 2h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1"
+                      /></svg
+                  ></span>
+                  <p class="fw-bold">Quản lý đơn hàng</p>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B7280"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" /></svg
+                ></span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-clock"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 2.66a1 1 0 0 0 -.993 .883l-.007 .117v5l.009 .131a1 1 0 0 0 .197 .477l.087 .1l3 3l.094 .082a1 1 0 0 0 1.226 0l.094 -.083l.083 -.094a1 1 0 0 0 0 -1.226l-.083 -.094l-2.707 -2.708v-4.585l-.007 -.117a1 1 0 0 0 -.993 -.883z"
+                      />
+                    </svg>
+                  </span>
+                  <p class="fw-bold">Lịch sử mua hàng</p>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B7280"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" /></svg
+                ></span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-bell"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
+                      />
+                      <path
+                        d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
+                      />
+                    </svg>
+                  </span>
+                  <p class="fw-bold">Thông báo</p>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B7280"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" /></svg
+                ></span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                      />
+                    </svg>
+                  </span>
+                  <p class="fw-bold">Địa chỉ giao hàng</p>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B7280"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" /></svg
+                ></span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer border-bottom border-2"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-message"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M18 3a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-4.724l-4.762 2.857a1 1 0 0 1 -1.508 -.743l-.006 -.114v-2h-1a4 4 0 0 1 -3.995 -3.8l-.005 -.2v-8a4 4 0 0 1 4 -4zm-4 9h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m2 -4h-8a1 1 0 1 0 0 2h8a1 1 0 0 0 0 -2"
+                      />
+                    </svg>
+                  </span>
+                  <p class="fw-bold">Tư vấn</p>
+                </div>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#6B7280"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 6l6 6l-6 6" /></svg
+                ></span>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#6B7280"
+                      class="icon icon-tabler icons-tabler-filled icon-tabler-settings"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M14.647 4.081a.724 .724 0 0 0 1.08 .448c2.439 -1.485 5.23 1.305 3.745 3.744a.724 .724 0 0 0 .447 1.08c2.775 .673 2.775 4.62 0 5.294a.724 .724 0 0 0 -.448 1.08c1.485 2.439 -1.305 5.23 -3.744 3.745a.724 .724 0 0 0 -1.08 .447c-.673 2.775 -4.62 2.775 -5.294 0a.724 .724 0 0 0 -1.08 -.448c-2.439 1.485 -5.23 -1.305 -3.745 -3.744a.724 .724 0 0 0 -.447 -1.08c-2.775 -.673 -2.775 -4.62 0 -5.294a.724 .724 0 0 0 .448 -1.08c-1.485 -2.439 1.305 -5.23 3.744 -3.745a.722 .722 0 0 0 1.08 -.447c.673 -2.775 4.62 -2.775 5.294 0zm-2.647 4.919a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                      />
+                    </svg>
+                  </span>
+                  <p class="fw-bold">Cài đặt</p>
+                </div>
+              </div>
+              <div class="px-1-2rem">
+                <div
+                  class="d-flex align-items-center justify-content-between py-1-2rem cursor-pointer border-2 border-bottom"
+                >
+                  <div class="d-flex gap-3 lh-base align-items-center">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="#6B7280"
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-shield-check"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                          d="M11.998 2l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021l.115 -.007zm3.71 7.293a1 1 0 0 0 -1.415 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+                        />
+                      </svg>
+                    </span>
+                    <p class="fw-bold">Chính sách & điều khoản sử dụng</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between p-1-2rem cursor-pointer"
+              >
+                <div class="d-flex gap-3 lh-base align-items-center">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#E30613"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-logout-2"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M10 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2"
+                      />
+                      <path d="M15 12h-12l3 -3" />
+                      <path d="M6 15l-3 -3" />
+                    </svg>
+                  </span>
+                  <p class="fw-bold text-red">Đăng xuất</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <main class="col-lg-9 col-12 info__main">
+            <div class="pt-4 border bg-white w-100 h-100">
+              <!-- Thông tin tài khoản -->
+              <form class="info__item">
+                <div
+                  class="d-flex flex-column justify-content-between w-100 h-100 px-4"
+                >
+                  <div class="">
+                    <div class="mb-4">
+                      <div class="fw-bold fs-4">Thông tin tài khoản</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 mb-4">
+                        <label for="fullname" class="form-label fw-bold"
+                          >Họ và tên<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="fullname"
+                          placeholder="Nhập họ và tên"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="phone" class="form-label fw-bold"
+                          >Số điện thoại<span class="text-danger"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="number"
+                          class="form-control py-3"
+                          id="phone"
+                          placeholder="Nhập số điện thoại"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="email" class="form-label fw-bold"
+                          >Email<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="email"
+                          class="form-control py-3"
+                          id="houseNumber"
+                          placeholder="Nhập email"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="company" class="form-label fw-bold"
+                          >Tên công ty<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="company"
+                          placeholder="Nhập tên công ty"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="hotline" class="form-label fw-bold"
+                          >Hotline công ty<span class="text-danger"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="hotline"
+                          placeholder="Nhập hotline công ty"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="tax" class="form-label fw-bold"
+                          >Mã số thuế<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="tax"
+                          placeholder="Nhập mã số thuế"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="btn__custom btn__custom--green px-5 py-3"
+                      type="submit"
+                    >
+                      Lưu lại
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- Quản lý đơn hàng -->
+              <form class="info__item">
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4">Quản lý đơn hàng</div>
+                </div>
+                <div class="mb-4 bg-gray py-3">
+                  <div
+                    class="px-4 d-flex justify-content-between align-items-center"
+                  >
+                    <p>
+                      Tiền giao dịch: <span class="fw-bold">45.610.000đ</span>
+                    </p>
+                    <p>Công nợ: <span class="fw-bold">5.000.000đ</span></p>
+                    <p>Tồn kho: <span class="fw-bold">0</span></p>
+                  </div>
+                </div>
+                <div class="table-responsive px-4">
+                  <table class="table align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <!-- Sản phẩm chiếm 2 cột -->
+                        <th scope="col" class="fw-bold text-gray">
+                          Mã đơn hàng
+                        </th>
+                        <th scope="col" class="fw-bold text-gray">Ngày mua</th>
+                        <th scope="col" class="fw-bold text-gray">Tổng tiền</th>
+                        <th scope="col" class="fw-bold text-gray">
+                          Trạng thái thanh toán
+                        </th>
+                        <th scope="col" class="fw-bold text-gray">
+                          Trạng thái đơn hàng
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td class="align-middle fw-bold text-sub-orange fs-16">
+                          Đang vận chuyển
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td class="align-middle fw-bold text-purple fs-16">
+                          Đang xử lý
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td class="align-middle fw-bold text-sub-red fs-16">
+                          Đơn hàng đã hủy
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Đã thanh toán
+                        </td>
+                        <td
+                          class="align-middle fw-bold text-second-green fs-16"
+                        >
+                          Giao hàng thành công
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Đã thanh toán
+                        </td>
+                        <td
+                          class="align-middle fw-bold text-second-green fs-16"
+                        >
+                          Giao hàng thành công
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+              <!-- Chi tiết đơn hàng -->
+              <div class="info__item active">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4 px-4"
+                >
+                  <div class="fw-bold fs-4">Chi tiết đơn hàng</div>
+                  <button
+                    class="btn bg-sub-red text-white border-0 px-4 py-2 rounded-pill"
+                    id="address__btn"
+                  >
+                    Hủy đơn hàng
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-5 px-4"
+                >
+                  <div class="fs-16">
+                    Đơn hàng: <span class="fw-bold">AM-38473</span>
+                  </div>
+                  <div class="fs-16">
+                    Ngày đặt hàng: <span class="fw-bold">13:46 10/08/2024</span>
+                  </div>
+                </div>
+                <div class="mb-5 px-5">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-3 px-3"
+                  >
+                    <div class="p-3 bg-green border-green rounded-circle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#fff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-rotate"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.95 11a8 8 0 1 0 -.5 4m.5 5v-5h-5" />
+                      </svg>
+                    </div>
+                    <div class="bar-process bg-dash-gray"></div>
+                    <div
+                      class="p-3 bg-transparent border-dash-gray rounded-circle"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6b7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-truck"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path
+                          d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5"
+                        />
+                      </svg>
+                    </div>
+                    <div class="bar-process bg-dash-gray"></div>
+                    <div
+                      class="p-3 bg-transparent border-dash-gray rounded-circle"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#6b7280"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-check"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l5 5l10 -10" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="text-green fw-bold fs-16">Đang xử lý</p>
+                    <p class="text-black fw-bold fs-16">Đang vận chuyển</p>
+                    <p class="text-black fw-bold fs-16">Đã giao hàng</p>
+                  </div>
+                </div>
+                <div class="mb-5 bg-light-orange py-4">
+                  <div class="px-4">
+                    <p class="text-sub-orange">
+                      Thời gian giao hàng dự kiến:
+                      <span class="fw-bold">12/08/2024</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4 mb-4">Địa chỉ nhận hàng</div>
+                  <div class="border--custom">
+                    <div class="table-responsive fs-12">
+                      <table class="table table-borderless mb-0">
+                        <tbody class="">
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Họ và tên:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Đào Quyết Thắng
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Địa chỉ:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Khu công nghiệp Hạp Lĩnh, Phường Hạp Lĩnh, Thành
+                              phố Bắc Ninh
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Điện thoại:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              0869 256 123
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4 mb-3">Ghi chú</div>
+                  <div class="bg-light-gray p-3 mb-3">
+                    <p class="fs-16 mb-3">Giao hàng giờ hành chính giúp mình</p>
+                    <p class="fs-16 text-gray">18:00 10/08/2024</p>
+                  </div>
+                  <div class="bg-light-gray p-3 mb-3">
+                    <p class="fs-16 mb-3">Giao hàng giờ hành chính giúp mình</p>
+                    <p class="fs-16 text-gray">18:00 10/08/2024</p>
+                  </div>
+                  <form>
+                    <div class="position-relative">
+                      <input
+                        type="text"
+                        class="input-note"
+                        placeholder="Thêm ghi chú"
+                      />
+                      <button class="submit-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="#067231"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="icon icon-tabler icons-tabler-outline icon-tabler-send-2"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M4.698 4.034l16.302 7.966l-16.302 7.966a.503 .503 0 0 1 -.546 -.124a.555 .555 0 0 1 -.12 -.568l2.468 -7.274l-2.468 -7.274a.555 .555 0 0 1 .12 -.568a.503 .503 0 0 1 .546 -.124z"
+                          />
+                          <path d="M6.5 12h14.5" />
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4">Sản phẩm</div>
+                  <div class="table-responsive py-3 border-bottom">
+                    <table class="table align-middle mb-0">
+                      <tbody>
+                        <tr class="align-middle cart-item">
+                          <td
+                            scope="row"
+                            class="d-flex align-items-center gap-4 py-2"
+                          >
+                            <img
+                              src="./assets/images/products_detail/1.png"
+                              alt="#"
+                              width="80px"
+                              height="80px"
+                            />
+                            <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+                          </td>
+                          <td class="fw-bold align-middle">126.000đ x 25</td>
+                          <td class="align-middle fw-bold">3.150.000đ</td>
+                        </tr>
+                        <tr class="align-middle cart-item ">
+                          <td
+                            scope="row"
+                            class="d-flex align-items-center gap-4 py-2"
+                          >
+                            <img
+                              src="./assets/images/products_detail/1.png"
+                              alt="#"
+                              width="80px"
+                              height="80px"
+                            />
+                            <p class="fw-bold mb-0">Găng tay chống tĩnh điện</p>
+                          </td>
+                          <td class="fw-bold align-middle">126.000đ x 25</td>
+                          <td class="align-middle fw-bold">3.150.000đ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <p class="fw-bold fs-16">Tiền hàng</p>
+                      <p class="fw-bold fs-16">3.360.000đ</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <p class="fw-bold fs-16">Phí vận chuyển</p>
+                      <p class="fw-bold fs-16">210.000đ</p>
+                    </div>
+                  </div>
+                  <div class="py-3 border-bottom">
+                    <div class="d-flex align-content-center justify-content-between mb-3">
+                      <p class="fw-bold fs-16">Tổng thanh toán</p>
+                      <p class="fw-bold fs-5 text-danger">3.570.000đ</p>
+                    </div>
+                    <div
+                      class="d-flex align-content-center justify-content-between mt-2"
+                    >
+                      <p></p>
+                      <p class="text-secondary">Đã bao gồm thuế VAT</p>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="fw-bold fs-16">Phương thức thanh toán</p>
+                      <p class="fw-bold fs-16">Thanh toán khi nhận hàng</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Lịch sử mua hàng -->
+              <form class="info__item">
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4">Lịch sử mua hàng</div>
+                </div>
+                <div class="table-responsive px-4">
+                  <table class="table align-middle mb-0">
+                    <thead>
+                      <tr>
+                        <!-- Sản phẩm chiếm 2 cột -->
+                        <th scope="col" class="fw-bold text-gray">
+                          Mã đơn hàng
+                        </th>
+                        <th scope="col" class="fw-bold text-gray">Ngày mua</th>
+                        <th scope="col" class="fw-bold text-gray">Tổng tiền</th>
+                        <th scope="col" class="fw-bold text-gray">
+                          Trạng thái thanh toán
+                        </th>
+                        <th scope="col" class="fw-bold text-gray">
+                          Trạng thái đơn hàng
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td class="align-middle fw-bold text-sub-red fs-16">
+                          Đơn hàng đã hủy
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td
+                          class="align-middle fw-bold text-second-green fs-16"
+                        >
+                          Giao hàng thành công
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Chưa thanh toán
+                        </td>
+                        <td class="align-middle fw-bold text-sub-red fs-16">
+                          Đơn hàng đã hủy
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Đã thanh toán
+                        </td>
+                        <td
+                          class="align-middle fw-bold text-second-green fs-16"
+                        >
+                          Giao hàng thành công
+                        </td>
+                      </tr>
+                      <tr class="border-bottom align-middle order-item">
+                        <td class="text-green fw-bold fs-16 align-middle">
+                          AM-387384
+                        </td>
+                        <td class="fw-bold align-middle fs-16">10/08/2024</td>
+                        <td class="align-middle fw-bold fs-16">1.259.000đ</td>
+                        <td class="align-middle fw-bold fs-16">
+                          Đã thanh toán
+                        </td>
+                        <td
+                          class="align-middle fw-bold text-second-green fs-16"
+                        >
+                          Giao hàng thành công
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+              <!-- Thông báo -->
+              <form class="info__item">
+                <div class="mb-4 px-4">
+                  <div class="fw-bold fs-4">Thông báo</div>
+                </div>
+                <div class="row px-4">
+                  <div
+                    class="d-flex align-items-center py-4 border-bottom col-12 gap-3"
+                  >
+                    <img
+                      src="./assets/images/products_detail/1.png"
+                      width="110px"
+                      height="110px"
+                      alt="#"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center gap-3"
+                    >
+                      <p class="text-second-green fw-bold fs-16">
+                        Đơn hàng đã hoàn tất
+                      </p>
+                      <p class="lh-base">
+                        Đơn hàng <span class="fw-bold">2493 8434</span> đã hoàn
+                        thành. Vui lòng liên hệ với chúng tôi khi có thắc mắc
+                        hoặc vấn đề gặp phải của đơn hàng.
+                      </p>
+                      <span class="tex-gray fs-12"> 10:30 05-08-2024 </span>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center py-4 border-bottom col-12 gap-3"
+                  >
+                    <img
+                      src="./assets/images/products_detail/5.png"
+                      width="110px"
+                      height="110px"
+                      alt="#"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center gap-3"
+                    >
+                      <p class="text-black fw-bold fs-16">
+                        Đơn hàng đang vận chuyển
+                      </p>
+                      <p class="lh-base">
+                        Đơn hàng <span class="fw-bold">2493 8434</span> đang
+                        trong quá trình vận chuyển. Và dự kiến giao trong 1-2
+                        ngày tới. Vui lòng bỏ qua thông báo này nếu bạn đã nhận
+                        được hàng.
+                      </p>
+                      <span class="tex-gray fs-12"> 10:30 05-08-2024 </span>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-center py-4 border-bottom col-12 gap-3"
+                  >
+                    <img
+                      src="./assets/images/products_detail/sale.png"
+                      width="110px"
+                      height="110px"
+                      alt="#"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center gap-3"
+                    >
+                      <p class="text-sub-orange fw-bold fs-16">
+                        Khuyến mãi giảm 20% đơn hàng
+                      </p>
+                      <p class="lh-base">
+                        Khuyến mãi giảm trực tiếp
+                        <span class="fw-bold">20%</span> giá trị đơn hàng. Thời
+                        gian ưu đãi từ
+                        <span class="fw-bold"
+                          >00:00 01/08/2024 - 23:00 20/08/2024</span
+                        >
+                        Lên đơn ngay kẻo bỏ lỡ cơ hội
+                      </p>
+                      <span class="tex-gray fs-12"> 10:30 05-08-2024 </span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center pt-4 col-12 gap-3">
+                    <img
+                      src="./assets/images/products_detail/7.png"
+                      width="110px"
+                      height="110px"
+                      alt="#"
+                    />
+                    <div
+                      class="d-flex flex-column justify-content-center gap-3"
+                    >
+                      <p class="text-black fw-bold fs-16">
+                        Đơn hàng đang vận chuyển
+                      </p>
+                      <p class="lh-base">
+                        Đơn hàng <span class="fw-bold">2493 8434</span> đã hoàn
+                        thành. Vui lòng liên hệ với chúng tôi khi có thắc mắc
+                        hoặc vấn đề gặp phải của đơn hàng.
+                      </p>
+                      <span class="tex-gray fs-12"> 10:30 05-08-2024 </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!-- Địa chỉ giao hàng -->
+              <form class="info__item">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-4 px-4"
+                >
+                  <div class="fw-bold fs-4">Địa chỉ giao hàng</div>
+                  <button
+                    class="btn btn-success text-white border-0 px-4 py-2 rounded-pill"
+                    id="address__btn"
+                  >
+                    Thêm địa chỉ mới
+                  </button>
+                </div>
+                <div class="px-4">
+                  <div class="border p-3 p-3 mb-4">
+                    <div
+                      class="fw-bold p-1 d-flex align-items-center justify-content-between mb-1"
+                    >
+                      <div class="d-flex align-items-center gap-1">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="#067231"
+                          class="icon icon-tabler icons-tabler-filled icon-tabler-circle-check"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path
+                            d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-1.293 5.953a1 1 0 0 0 -1.32 -.083l-.094 .083l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.403 1.403l.083 .094l2 2l.094 .083a1 1 0 0 0 1.226 0l.094 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z"
+                          />
+                        </svg>
+                        <span class="text-green">Địa chỉ mặc định</span>
+                      </div>
+                      <button class="fw-bold text-red border-0 bg-transparent">
+                        Chỉnh sửa
+                      </button>
+                    </div>
+                    <div class="table-responsive fs-12">
+                      <table class="table table-borderless mb-0">
+                        <tbody class="">
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Họ và tên:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Đào Quyết Thắng
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Địa chỉ:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Khu công nghiệp Hạp Lĩnh, Phường Hạp Lĩnh, Thành
+                              phố Bắc Ninh
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Điện thoại:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              0869 256 123
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="border p-3 p-3 mb-4">
+                    <div
+                      class="fw-bold p-1 d-flex align-items-center justify-content-between mb-1"
+                    >
+                      <div></div>
+                      <button class="fw-bold text-red border-0 bg-transparent">
+                        Chỉnh sửa
+                      </button>
+                    </div>
+                    <div class="table-responsive fs-12 position-relative">
+                      <table class="table table-borderless mb-0">
+                        <tbody class="">
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Họ và tên:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Đào Quyết Thắng
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Địa chỉ:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              Khu công nghiệp Hạp Lĩnh, Phường Hạp Lĩnh, Thành
+                              phố Bắc Ninh
+                            </td>
+                          </tr>
+                          <tr class="">
+                            <td class="p-1 fs-16 lh-base">Điện thoại:</td>
+                            <td class="p-1 fs-16 lh-base fw-bold">
+                              0869 256 123
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button
+                        class="btn__custom btn__custom--green rounded-pill px-4 py-2 position-absolute bottom-0 end-0 fw-normal"
+                      >
+                        Sử dụng
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <!-- Thêm địa chỉ giao hàng -->
+              <form class="info__item">
+                <div
+                  class="d-flex flex-column justify-content-between w-100 h-100 px-4"
+                >
+                  <div class="">
+                    <div class="mb-4">
+                      <div class="fw-bold fs-4">Thêm địa chỉ giao hàng</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 mb-4">
+                        <label for="fullname" class="form-label"
+                          >Họ và tên<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="fullname"
+                          placeholder="Nhập họ và tên"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="phone" class="form-label"
+                          >Số điện thoại<span class="text-danger"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="number"
+                          class="form-control py-3"
+                          id="phone"
+                          placeholder="Nhập số điện thoại"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="houseNumber" class="form-label"
+                          >Số nhà<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="houseNumber"
+                          placeholder="Số nhà,tên đường"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="district" class="form-label"
+                          >Phường/Xã<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="district"
+                          placeholder="Phường/Xã"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="province" class="form-label"
+                          >Quận/Huyện<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="province"
+                          placeholder="Quận/Huyện"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-6 mb-4">
+                        <label for="city" class="form-label"
+                          >Tỉnh/Thành phố<span class="text-danger"
+                            >*</span
+                          ></label
+                        >
+                        <input
+                          type="text"
+                          class="form-control py-3"
+                          id="city"
+                          placeholder="Tỉnh/Thành phố"
+                        />
+                        <span class="form-text"></span>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check d-flex align-items-center gap-2">
+                          <input
+                            width="24px"
+                            height="24px"
+                            class="form-check-input bg-success border-success"
+                            type="checkbox"
+                            id="customCheck"
+                          />
+                          <label
+                            class="form-check-label fw-bold fs-16"
+                            for="customCheck"
+                          >
+                            Đặt làm địa chỉ mặc định
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      class="btn__custom btn__custom--green px-5 py-3"
+                      type="submit"
+                    >
+                      Lưu lại
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <!-- introduce end -->
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-5 col-md-6 col-12">
+              <div
+                class="h-100 footer__wrapper__content__introduce d-flex justify-content-between flex-column"
+              >
+                <a href="#" class="col-6 mb-4">
+                  <img
+                    src="./assets/Frame 45994.svg"
+                    height="62px"
+                    width="196px"
+                  />
+                </a>
+                <div class="lh-base mb-3">
+                  <span class="footer__wrapper__content__text">Địa chỉ: </span
+                  >Khu công nghiệp Hạp Lĩnh, Phường Hạp Lĩnh, TP.Bắc Ninh, Việt
+                  Nam.
+                </div>
+                <div class="lh-base mb-3">
+                  <div class="footer__wrapper__content__text">Điện thoại:</div>
+                  <span> 0222 3898 222</span>
+                </div>
+                <div class="lh-base mb-3">
+                  <div class="footer__wrapper__content__text">Email:</div>
+                  <span>dichvukhachhang@toanthinh.vn</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-2 footer__wrapper__content__detail col-md-3 col-6"
+            >
+              <div class="text-uppercase fw-bold mb-4">quick links</div>
+              <p class="mb-3"><a href="#" class="text-dark">Trang chủ</a></p>
+              <p class="mb-3"><a href="#" class="text-dark">Giới thiệu</a></p>
+              <p class="mb-3"><a href="#" class="text-dark">Sản phẩm</a></p>
+              <p class="mb-3"><a href="#" class="text-dark">Tin tức</a></p>
+              <p><a href="#" class="text-dark">Liên hệ</a></p>
+            </div>
+            <div
+              class="col-lg-2 footer__wrapper__content__detail col-md-3 col-6"
+            >
+              <div class="text-uppercase fw-bold mb-4">CHÍNH SÁCH CHUNG</div>
+              <p class="mb-3">
+                <a href="#" class="text-dark">Chính sách thanh toán</a>
+              </p>
+              <p class="mb-3">
+                <a href="#" class="text-dark">Chính sách giao hàng</a>
+              </p>
+              <p class="mb-3">
+                <a href="#" class="text-dark">Chính sách bảo hành</a>
+              </p>
+              <p class="mb-3">
+                <a href="#" class="text-dark">Chính sách đổi trả</a>
+              </p>
+            </div>
+            <div
+              class="d-flex flex-column justify-content-between h-100 col-lg-3 col-12 footer__wrapper__content__detail"
+            >
+              <div class="text-uppercase fw-bold mb-4">
+                ĐĂNG KÝ NHẬN THÔNG TIN
+              </div>
+              <div
+                class="d-flex justify-content-between footer__wrapper__content__detail__register w-100 mb-4"
+              >
+                <input
+                  type="text"
+                  class="p-3 w-100"
+                  placeholder="Your email address"
+                />
+                <button
+                  class="text-uppercase btn__custom btn__custom--green w-75 p-0"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+              <p class="lh-base mb-4">
+                By providing your email address, you agree to our Privacy Policy
+                and Terms of Service
+              </p>
+              <div class="mb-4">
+                <a href="#" class="me-2">
+                  <img
+                    src="./assets/images/social-icon/facebook.svg"
+                    alt="facebook"
+                  />
+                </a>
+                <a href="#" class="me-2">
+                  <img
+                    src="./assets/images/social-icon/instagram.svg"
+                    alt="instagram"
+                  />
+                </a>
+                <a href="#" class="me-2">
+                  <img
+                    src="./assets/images/social-icon/linkin.svg"
+                    alt="linkin"
+                  />
+                </a>
+              </div>
+            </div>
+            <!-- <div class="col-7 footer__wrapper__content__detail">
+          <div class="row h-100">
+         
+          </div>
+         </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <span>Copyright © ToanThinh - All Rights Reserved</span>
+      </div>
+    </footer>
+    <!-- Toast -->
+
+    <!-- footer end -->
+    <!-- -- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- -- Bootstrap -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/login_cart.js"></script>
+  </body>
+</html>

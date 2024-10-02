@@ -1,0 +1,68 @@
+.info {
+  margin-top: 70px;
+  background-color: var(--color-bg-gray);
+  &__main {
+    min-height: 682px;
+  }
+  &__item {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    &.active {
+      display: block;
+    }
+  }
+}
+.form-check-input {
+  width: 24px;
+  height: 24px;
+}
+.order-item {
+  height: 100px;
+}
+.bar-process {
+  height: 3px;
+  width: 100%;
+}
+.border--custom {
+  border-left: 2px solid #ccc; /* Màu xám cho các cạnh bên */
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  position: relative; /* Đặt cho phần tử gốc để có thể thêm phần tử giả */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Chiều cao đường viền trên */
+    background: repeating-linear-gradient(
+      45deg,
+      /* Tạo đường chéo */ #99ccff 0,
+      #99ccff 40px,
+      transparent 40px,
+      transparent 50px,
+      #ff9999 50px,
+      #ff9999 90px,
+      transparent 90px,
+      transparent 100px
+    );
+  }
+}
+.input-note{
+  width: 100%;
+  padding: 20px 100px 20px 10px;
+  font-size: 16px;
+  border:1px solid var(--color-gray);
+  z-index: 1;
+}
+.submit-icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 100;
+  background: transparent;
+}

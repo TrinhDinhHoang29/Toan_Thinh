@@ -1,69 +1,119 @@
 :root {
-    --color-green: #067231;
-    --color-sub-green: #087333;
-    --color-red: #E30613;
-    --color-white: #FFFFFF;
-    --color-gray: #E5E7EB;
-    --color-sub-gray: #6B7280;
-    --color-dash-gray: #9CA3AF;
-    --color-text-gray: #D1D5DB;
-    --color-blue: #1C64F2;
-    --color-orange: #DA6817;
-    --font: "Inter", sans-serif;
+  --color-green: #067231;
+  --color-sub-green: #087333;
+  --color-second-green: #03c200;
+  --color-red: #e30613;
+  --color-sub-red:#E02424;
+  --color-white: #ffffff;
+  --color-gray: #e5e7eb;
+  --color-sub-gray: #6b7280;
+  --color-bg-gray: #f3f4f6;
+  --color-dash-gray: #9ca3af;
+  --color-text-gray: #d1d5db;
+  --color-blue: #1c64f2;
+  --color-orange: #da6817;
+  --color-sub-orange: #ff5a1f;
+  --color-light-orange:#FEECDC;
+  --color-purple: #7e3af2;
+  --font: "Inter", sans-serif;
 }
 
 html,
 body {
-    font-family: var(--font);
-    font-size: 14px;
+  font-family: var(--font);
+  font-size: 14px;
 }
 
 button {
-    border: none;
-    align-items: center;
+  border: none;
+  align-items: center;
 }
 
 .text-red {
-    color: var(--color-red);
+  color: var(--color-red);
 }
-
+.text-sub-red{
+    color: var(--color-sub-red);
+}
 .text-green {
-    color: #087333;
+  color: #087333;
+}
+.text-second-green {
+  color: var(--color-second-green);
+}
+.text-purple {
+  color: var(--color-purple);
+}
+.text-sub-orange{
+  color: var(--color-sub-orange);
 }
 
 .pr-8 {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 .pl-8 {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .mr-8 {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .ml-8 {
-    margin-left: 8px;
+  margin-left: 8px;
 }
-.fs-12{
-    font-size: 12px;
+.fs-12 {
+  font-size: 12px;
 }
-.text-gray{
-    color:var(--color-sub-gray)
+.fs-18 {
+  font-size: 18px;
 }
-.cursor-pointer{
-    cursor: pointer;
+.fs-16 {
+  font-size: 16px;
 }
-.p-1-2rem{
-    padding: 1.2rem;
+.text-gray {
+  color: var(--color-sub-gray);
 }
-.px-1-2rem{
-    padding: 0 1.2rem;
+.text-sub-orange {
+  color: var(--color-sub-orange);
 }
-.py-1-2rem{
-    padding: 1.2rem 0;
+.cursor-pointer {
+  cursor: pointer;
 }
-.pb-1-2rem{
-    padding-bottom: 1.2rem;
+.p-1-2rem {
+  padding: 1.2rem;
+}
+.px-1-2rem {
+  padding: 0 1.2rem;
+}
+.py-1-2rem {
+  padding: 1.2rem 0;
+}
+.pb-1-2rem {
+  padding-bottom: 1.2rem;
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+.bg-gray {
+  background-color: var(--color-gray);
+}
+.bg-dash-gray{
+  background-color: var(--color-dash-gray);
+}
+.bg-light-gray{
+  background-color: var( --color-bg-gray);
+}
+.bg-sub-red{
+  background-color: var(--color-sub-red);
+}
+.border-green{
+  border: 3px solid var(--color-green);
+}
+.border-dash-gray{
+  border: 3px solid var(--color-dash-gray);
+}
+.bg-light-orange{
+  background-color: var(--color-light-orange);
 }
