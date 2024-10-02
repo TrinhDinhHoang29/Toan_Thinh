@@ -1,11 +1,30 @@
+@charset "UTF-8";
 .cart {
   margin-top: 70.3px;
-  background-color: var(--color-gray);
+  background-color: var(--color-bg-gray);
 }
 .cart__number {
   width: 124px;
   padding: 13px 15px;
   border: 2px solid var(--color-gray);
+}
+
+.toast {
+  background-color: var(--color-sub-green);
+  box-shadow: 0px 0px 3px var(--color-gray);
+  border: 3px solid var(--color-white);
+}
+.toast-container {
+  z-index: 1055; /* Z-index cao hơn các thành phần khác của Bootstrap */
+  position: fixed;
+  top: 80px;
+  right: 0;
+}
+.toast-body {
+  padding: 15px;
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=login_cart.css.map */
