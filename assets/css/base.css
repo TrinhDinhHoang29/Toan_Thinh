@@ -30,18 +30,6 @@ button {
     align-items: center;
 }
 
-.bold {
-    font-weight: 700;
-}
-
-.ml-8 {
-    margin-left: 8px;
-}
-
-.none {
-    display: none;
-}
-
 .mb-24 {
     margin-bottom: 24px;
 }
@@ -83,8 +71,24 @@ button {
     color: var(--color-red);
 }
 
+.text-sub-red {
+    color: var(--color-sub-red);
+}
+
 .text-green {
     color: #087333;
+}
+
+.text-second-green {
+    color: var(--color-second-green);
+}
+
+.text-purple {
+    color: var(--color-purple);
+}
+
+.text-sub-orange {
+    color: var(--color-sub-orange);
 }
 
 .bg-green {
@@ -111,8 +115,20 @@ button {
     font-size: 12px;
 }
 
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
 .text-gray {
-    color: var(--color-sub-gray)
+    color: var(--color-sub-gray);
+}
+
+.text-sub-orange {
+    color: var(--color-sub-orange);
 }
 
 .cursor-pointer {
@@ -133,4 +149,36 @@ button {
 
 .pb-1-2rem {
     padding-bottom: 1.2rem;
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
+
+.bg-gray {
+    background-color: var(--color-gray);
+}
+
+.bg-dash-gray {
+    background-color: var(--color-dash-gray);
+}
+
+.bg-light-gray {
+    background-color: var(--color-bg-gray);
+}
+
+.bg-sub-red {
+    background-color: var(--color-sub-red);
+}
+
+.border-green {
+    border: 3px solid var(--color-green);
+}
+
+.border-dash-gray {
+    border: 3px solid var(--color-dash-gray);
+}
+
+.bg-light-orange {
+    background-color: var(--color-light-orange);
 }
