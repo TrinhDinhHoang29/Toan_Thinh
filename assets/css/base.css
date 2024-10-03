@@ -1,24 +1,21 @@
 :root {
     --color-green: #067231;
-        --color-sub-green: #087333;
-        --color-second-green: #03c200;
-        --color-red: #E30613;
-        --color-sub-red: #E02424;
-        --color-white: #FFFFFF;
-        --color-gray: #E5E7EB;
-        --color-sub-gray: #6B7280;
-        --color-bg-gray: #f3f4f6;
-        --color-dash-gray: #9CA3AF;
-        --color-text-gray: #D1D5DB;
-        --color-text-black: #1F2A37;
-        --color-text-sub-black: #111928;
-        --color-blue: #1C64F2;
-        --color-orange: #DA6817;
-        --color-sub-orange: #ff5a1f;
-        --color-light-orange: #FEECDC;
-        --color-purple: #7e3af2;
-        --color-bg: #f3f4f6;
-        --font: "Inter", sans-serif;
+    --color-sub-green: #087333;
+    --color-second-green: #03c200;
+    --color-red: #e30613;
+    --color-sub-red: #E02424;
+    --color-white: #ffffff;
+    --color-gray: #e5e7eb;
+    --color-sub-gray: #6b7280;
+    --color-bg-gray: #f3f4f6;
+    --color-dash-gray: #9ca3af;
+    --color-text-gray: #d1d5db;
+    --color-blue: #1c64f2;
+    --color-orange: #da6817;
+    --color-sub-orange: #ff5a1f;
+    --color-light-orange: #FEECDC;
+    --color-purple: #7e3af2;
+    --font: "Inter", sans-serif;
 }
 
 html,
@@ -33,15 +30,15 @@ button {
     align-items: center;
 }
 
-.bold{
+.bold {
     font-weight: 700;
 }
 
-.ml-8{
+.ml-8 {
     margin-left: 8px;
 }
 
-.none{
+.none {
     display: none;
 }
 
@@ -49,15 +46,16 @@ button {
     margin-bottom: 24px;
 }
 
-.ml-8{
+.ml-8 {
     margin-left: 8px;
 }
 
-.py-12  {
-    padding: 12px 0;;
+.py-12 {
+    padding: 12px 0;
+    ;
 }
 
-.cursor-pointer{
+.cursor-pointer {
     cursor: pointer;
 }
 
@@ -65,19 +63,19 @@ button {
     width: 100%;
 }
 
-.bg-layout{
+.bg-layout {
     background: var(--color-bg);
 }
 
-.font-weight-700{
+.font-weight-700 {
     font-weight: 700;
 }
 
-.font-size-14{
+.font-size-14 {
     font-size: 14px;
 }
 
-.text-light{
+.text-light {
     color: #fff;
 }
 
@@ -89,7 +87,7 @@ button {
     color: #087333;
 }
 
-.bg-green{
+.bg-green {
     background: #067231;
 }
 
@@ -108,24 +106,31 @@ button {
 .ml-8 {
     margin-left: 8px;
 }
-.fs-12{
+
+.fs-12 {
     font-size: 12px;
 }
-.text-gray{
-    color:var(--color-sub-gray)
+
+.text-gray {
+    color: var(--color-sub-gray)
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
 }
-.p-1-2rem{
+
+.p-1-2rem {
     padding: 1.2rem;
 }
-.px-1-2rem{
+
+.px-1-2rem {
     padding: 0 1.2rem;
 }
-.py-1-2rem{
+
+.py-1-2rem {
     padding: 1.2rem 0;
 }
-.pb-1-2rem{
+
+.pb-1-2rem {
     padding-bottom: 1.2rem;
 }
