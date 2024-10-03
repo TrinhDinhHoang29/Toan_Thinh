@@ -8,6 +8,7 @@
     --color-dash-gray: #9CA3AF;
     --color-text-gray: #D1D5DB;
     --color-text-black: #1F2A37;
+    --color-text-sub-black: #111928;
     --color-blue: #1C64F2;
     --color-orange: #DA6817;
     --color-bg:#f3f4f6;
@@ -24,6 +25,18 @@ body {
 button {
     border: none;
     align-items: center;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.ml-8{
+    margin-left: 8px;
+}
+
+.none{
+    display: none;
 }
 
 .mb-24 {
