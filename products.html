@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/products.css" />
-    <title>Liên hệ</title>
+    <title>Sản phẩm</title>
 </head>
 
 <body class="bg-layout">
@@ -103,11 +103,10 @@
             <div class="container">
                 <div class="row">
                     <div class="search-field__sidebar col-lg-3 mb-3 mb-lg-0">
-                        <div class="search-field__sidebar-wrapper">
-                          <div class="search-field__sidebar__header bg-green">
+                        <div class="search-field__sidebar__header bg-green">
                             <p class="font-weight-700 font-size-14 text-light">DANH MỤC SẢN PHẨM</p>
                           </div>
-                        <ul class="search-field__sidebar__list">
+                          <ul class="search-field__sidebar__list">
                             <li class="search-field__sidebar__list__item">Găng tay</li>
                             <li class="search-field__sidebar__list__item">Thảm dính bụi</li>
                             <li class="search-field__sidebar__list__item">Tăm bông phòng sạch</li>
@@ -122,8 +121,8 @@
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>
                             </li>
                         </ul>
-                        </div>
                     </div>
+
                     <div class="search-field__content col-lg-9">
                         <div class="search-field__content__search d-flex justify-content-between">
                             <div class="search-field__content__search-input">
@@ -131,7 +130,7 @@
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                               </label>
                               <input type="text" id="search" placeholder="Tìm kiếm sản phẩm"> 
-                              <label for="">
+                              <label for="" class="search-field__search-by-image">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-camera"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" /><path d="M9 13a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
                               </label>
                             </div>
@@ -149,6 +148,216 @@
                         <div class="search-field__content__banner">
                           <img src="./assets/images/banner/products_banner.png" alt="">
                         </div>
+                    </div>
+
+                    <!-- Click vao icon camera sẽ bật lên phần tìm kiếm bằng hình ảnh -->
+                    <div class="search-field__image-search col-lg-9 none">
+                      <div class="search-field__image-search__search-and-sort row align-items-center mb-4">
+                        <div class="sort d-flex align-items-center col-lg-8 col-sm-12 mb-lg-0 mb-sm-3">
+                          <p>Sắp xếp theo:</p>
+                          <ul class="d-flex">
+                            <li class="active">Phổ biến</li>
+                            <li>Mới nhất</li>
+                            <li>Bán chạy</li>
+                          </ul>
+                        </div>
+                        <div class="search d-flex col-lg-4 col-sm-12">
+                          <input type="text" id="search-input" placeholder="Tìm kiếm">
+                          <button>
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="search-field__image-search__result">
+                        <h3 class="fw-bold mb-3">Kết quả tìm kiếm bằng hình ảnh</h3>
+
+                        <ul class="search-field__image-search__result__input d-flex mb-4">
+                          <li>
+                            <img src="./assets/images/products/input1.png" alt="">
+                          </li>
+                          <li class="ml-8">
+                            <img src="./assets/images/products/input2.png" alt="">
+                          </li>
+                        </ul>
+
+                        <ul class="products__list mb-4">
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+               <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves3.png" alt="">
+                </div>
+                <p>Găng tay Chống Tĩnh điện</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves1.png" alt="">
+                </div>
+                <p>Găng tay Chống Hoá chất</p>
+              </li>
+              <li class="products__list__item">
+                <div>
+                  <img src="./assets/images/products/gloves2.png" alt="">
+                </div>
+                <p>Găng tay Phủ PU Bàn màu xám</p>
+              </li>
+                        </ul>
+                      </div>
                     </div>
                 </div>
             </div>
