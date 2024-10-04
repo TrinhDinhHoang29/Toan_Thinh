@@ -51,7 +51,7 @@ button {
 }
 
 .bg-layout{
-    background: var(--color-bg);
+  background: var(--color-bg-gray);
 }
 
 .font-weight-700{
