@@ -1,21 +1,21 @@
 :root {
-    --color-green: #067231;
-    --color-sub-green: #087333;
-    --color-second-green: #03c200;
-    --color-red: #e30613;
-    --color-sub-red: #E02424;
-    --color-white: #ffffff;
-    --color-gray: #e5e7eb;
-    --color-sub-gray: #6b7280;
-    --color-bg-gray: #f3f4f6;
-    --color-dash-gray: #9ca3af;
-    --color-text-gray: #d1d5db;
-    --color-blue: #1c64f2;
-    --color-orange: #da6817;
-    --color-sub-orange: #ff5a1f;
-    --color-light-orange: #FEECDC;
-    --color-purple: #7e3af2;
-    --font: "Inter", sans-serif;
+  --color-green: #067231;
+  --color-sub-green: #087333;
+  --color-second-green: #03c200;
+  --color-red: #e30613;
+  --color-sub-red:#E02424;
+  --color-white: #ffffff;
+  --color-gray: #e5e7eb;
+  --color-sub-gray: #6b7280;
+  --color-bg-gray: #f3f4f6;
+  --color-dash-gray: #9ca3af;
+  --color-text-gray: #d1d5db;
+  --color-blue: #1c64f2;
+  --color-orange: #da6817;
+  --color-sub-orange: #ff5a1f;
+  --color-light-orange:#FEECDC;
+  --color-purple: #7e3af2;
+  --font: "Inter", sans-serif;
 }
 
 html,
@@ -26,24 +26,23 @@ body {
 }
 
 button {
-    border: none;
-    align-items: center;
+  border: none;
+  align-items: center;
 }
 
 .mb-24 {
     margin-bottom: 24px;
 }
 
-.ml-8 {
+.ml-8{
     margin-left: 8px;
 }
 
-.py-12 {
-    padding: 12px 0;
-    ;
+.py-12  {
+    padding: 12px 0;;
 }
 
-.cursor-pointer {
+.cursor-pointer{
     cursor: pointer;
 }
 
@@ -51,134 +50,111 @@ button {
     width: 100%;
 }
 
-.bg-layout {
+.bg-layout{
     background: var(--color-bg);
 }
 
-.font-weight-700 {
+.font-weight-700{
     font-weight: 700;
 }
 
-.font-size-14 {
+.font-size-14{
     font-size: 14px;
 }
 
-.text-light {
+.text-light{
     color: #fff;
 }
 
 .text-red {
-    color: var(--color-red);
+  color: var(--color-red);
 }
-
-.text-sub-red {
+.text-sub-red{
     color: var(--color-sub-red);
 }
-
 .text-green {
-    color: #087333;
+  color: #087333;
 }
-
 .text-second-green {
-    color: var(--color-second-green);
+  color: var(--color-second-green);
 }
-
 .text-purple {
-    color: var(--color-purple);
+  color: var(--color-purple);
+}
+.text-sub-orange{
+  color: var(--color-sub-orange);
 }
 
-.text-sub-orange {
-    color: var(--color-sub-orange);
-}
-
-.bg-green {
+.bg-green{
     background: #067231;
 }
 
 .pr-8 {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 .pl-8 {
-    padding-left: 8px;
+  padding-left: 8px;
 }
 
 .mr-8 {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .ml-8 {
-    margin-left: 8px;
+  margin-left: 8px;
 }
-
 .fs-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
-
 .fs-18 {
-    font-size: 18px;
+  font-size: 18px;
 }
-
 .fs-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 .text-gray {
-    color: var(--color-sub-gray);
+  color: var(--color-sub-gray);
 }
-
 .text-sub-orange {
-    color: var(--color-sub-orange);
+  color: var(--color-sub-orange);
 }
-
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 .p-1-2rem {
-    padding: 1.2rem;
+  padding: 1.2rem;
 }
-
 .px-1-2rem {
-    padding: 0 1.2rem;
+  padding: 0 1.2rem;
 }
-
 .py-1-2rem {
-    padding: 1.2rem 0;
+  padding: 1.2rem 0;
 }
-
 .pb-1-2rem {
-    padding-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
 }
-
 .bg-green {
-    background-color: var(--color-green);
+  background-color: var(--color-green);
 }
-
 .bg-gray {
-    background-color: var(--color-gray);
+  background-color: var(--color-gray);
 }
-
-.bg-dash-gray {
-    background-color: var(--color-dash-gray);
+.bg-dash-gray{
+  background-color: var(--color-dash-gray);
 }
-
-.bg-light-gray {
-    background-color: var(--color-bg-gray);
+.bg-light-gray{
+  background-color: var( --color-bg-gray);
 }
-
-.bg-sub-red {
-    background-color: var(--color-sub-red);
+.bg-sub-red{
+  background-color: var(--color-sub-red);
 }
-
-.border-green {
-    border: 3px solid var(--color-green);
+.border-green{
+  border: 3px solid var(--color-green);
 }
-
-.border-dash-gray {
-    border: 3px solid var(--color-dash-gray);
+.border-dash-gray{
+  border: 3px solid var(--color-dash-gray);
 }
-
-.bg-light-orange {
-    background-color: var(--color-light-orange);
+.bg-light-orange{
+  background-color: var(--color-light-orange);
 }
