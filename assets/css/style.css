@@ -234,5 +234,12 @@
     max-height: 276px;
   }
 }
+.header__submenu {
+  display: none;
+}
+
+.header__menu__item:hover > .header__submenu {
+  display: block !important;
+}
 
 /*# sourceMappingURL=style.css.map */

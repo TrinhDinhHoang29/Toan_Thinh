@@ -285,14 +285,11 @@
     }
     
 }
-
-// @media only screen and (max-width: 0px) {
-//     .banner__content{
-//         margin-top: 20%;
-//         h1{
-//             font-size: 30px;
-//         }
-//     }
-// }
+.header__submenu{
+    display: none;
+}
+.header__menu__item:hover > .header__submenu{
+ display: block !important;
+} 
 
 //responsive end 
