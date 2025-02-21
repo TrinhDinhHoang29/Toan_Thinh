@@ -13,3 +13,12 @@ if (avt) {
         propper.classList.toggle('active');
     })
 }
+
+document.querySelector('.search-field__search-by-image').addEventListener("click", () => {
+    document.querySelector('.search-field__content').classList.add('none');
+    document.querySelector('.banner').classList.add('none');
+    document.querySelector('.products').classList.add('none');
+
+    document.querySelector('.search-field__image-search').classList.remove('none');
+})
+
